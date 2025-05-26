@@ -3,14 +3,12 @@ package main
 import "fmt"
 
 func main() {
-	// short declaration
 	name := "Muaz"
-	var isFunny = true
+	// Prints a formatted string in standard out 
+	fmt.Printf("Hello, %v\n", name)
 
-	fmt.Println(name, isFunny)
-
-	// declare multiple variables in the same line
-	firstName, lastName, age := "Muaz", "Hussain", 26
-
-	fmt.Println(firstName, lastName, age)
+	age := 26
+	// Returns a formatted string 
+	formattedText := fmt.Sprintf("You are %v years old!\n", age)
+	fmt.Println(formattedText)
 }
