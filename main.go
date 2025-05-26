@@ -3,17 +3,14 @@ package main
 import "fmt"
 
 func main() {
-	// variable declaration using var keyword
-	var smsSendingLimit int
-	var costPerSMS float32
-	var hasPermission bool
-	var userName string
+	// short declaration
+	name := "Muaz"
+	var isFunny = true
 
-	fmt.Printf(
-		"%d %f %t %s\n",
-		smsSendingLimit,
-		costPerSMS,
-		hasPermission,
-		userName,
-	)
+	fmt.Println(name, isFunny)
+
+	// declare multiple variables in the same line
+	firstName, lastName, age := "Muaz", "Hussain", 26
+
+	fmt.Println(firstName, lastName, age)
 }
