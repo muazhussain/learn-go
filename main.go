@@ -1,14 +1,22 @@
 package main
 
+import (
+	"fmt"
+	"strconv"
+)
 
 func main() {
-	// Short lived variables should have short name
-	var i int = 0
+	// Type conversion
+	var i int = 42
+	var k float32
+	k = float32(i)
+	fmt.Printf("%v %T\n", k, k)
 
-	// Long used variables name should have long name
-	var seasonNumber int = 5
+	var pi float32 = 3.1416
+	var absPI int = int(pi)
+	fmt.Printf("%v %T\n", absPI, absPI)
 
-	// acnoname should have all upper case
-	var systemURL string = "10.0.2.50"
-	
+	var j int = 10
+	var val string = strconv.Itoa(j)
+	fmt.Printf("%v %T\n", val, val)
 }
