@@ -1,12 +1,13 @@
 package main
 
-// variable block - package level
-var (
-	name string = "Muaz"
-	age  int    = 26
-	city string = "Dhaka"
-)
+// Global Scope
+var I int = 42
+
+// Package Scope
+var k int = 0
 
 func main() {
-
+	// Block Scope
+	var name string = "Muaz"
+	name += " Hussain"
 }
