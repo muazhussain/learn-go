@@ -1,13 +1,14 @@
 package main
 
-// Global Scope
-var I int = 42
-
-// Package Scope
-var k int = 0
 
 func main() {
-	// Block Scope
-	var name string = "Muaz"
-	name += " Hussain"
+	// Short lived variables should have short name
+	var i int = 0
+
+	// Long used variables name should have long name
+	var seasonNumber int = 5
+
+	// acnoname should have all upper case
+	var systemURL string = "10.0.2.50"
+	
 }
