@@ -3,5 +3,6 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("hello!")
+	const a int = 42
+	fmt.Printf("%v %T\n", a, a)
 }
