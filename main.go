@@ -1,11 +1,9 @@
 package main
 
-import (
-	"fmt"
-	"math"
-)
+import "fmt"
+
+const a = iota
 
 func main() {
-	const pi float64 = math.Acos(-1)
-	fmt.Printf("%v %T\n", pi, pi)
+	fmt.Printf("%v %T\n", a, a)
 }
