@@ -1,8 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 func main() {
-	const a int = 42
-	fmt.Printf("%v %T\n", a, a)
+	const pi float64 = math.Acos(-1)
+	fmt.Printf("%v %T\n", pi, pi)
 }
