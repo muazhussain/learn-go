@@ -1,8 +1,6 @@
 package main
 
-import "fmt"
-
 func main() {
-	a := make([]int, 3, 100) // type, length, capacity 
-	fmt.Printf("len: %v, cap: %v\n", len(a), cap(a))
+	a := []int{}
+	a = append(a, 2) // adding new element into the slice
 }
