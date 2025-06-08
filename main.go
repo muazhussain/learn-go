@@ -3,7 +3,8 @@ package main
 import "fmt"
 
 const (
-	a = iota
+	_ = (20 * iota)
+	a
 	b
 	c
 )
