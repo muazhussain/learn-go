@@ -2,17 +2,17 @@ package main
 
 import "fmt"
 
+type Doctor struct {
+	number     int
+	actorName  string
+	companions []string
+}
+
 func main() {
-	statePolulation := make(map[string]int)
-	statePolulation = map[string]int{
-		"Dhaka":  150000,
-		"Khulna": 2000,
+	aDoctor := Doctor{
+		number:     2,
+		actorName:  "Muaz",
+		companions: []string{"X", "Y", "Z"},
 	}
-	// Passed as reference
-	sp := statePolulation
-	fmt.Println(statePolulation)
-	fmt.Println(sp)
-	delete(sp, "Dhaka")
-	fmt.Println(statePolulation)
-	fmt.Println(sp)
+	fmt.Println(aDoctor)
 }
