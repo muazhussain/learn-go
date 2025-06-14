@@ -8,9 +8,8 @@ func main() {
 		"Dhaka":  150000,
 		"Khulna": 2000,
 	}
-	fmt.Println(statePolulation)
-	statePolulation["Jashore"] = 1000
-	fmt.Println(statePolulation)
-	delete(statePolulation, "Jashore")
-	fmt.Println(statePolulation)
+	pop, ok := statePolulation["Dhaka"]
+	fmt.Println(pop, ok)
+	pop, ok = statePolulation["Jashore"]
+	fmt.Println(pop, ok)
 }
