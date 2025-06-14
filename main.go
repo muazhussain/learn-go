@@ -11,4 +11,6 @@ func main() {
 	fmt.Println(statePolulation)
 	statePolulation["Jashore"] = 1000
 	fmt.Println(statePolulation)
+	delete(statePolulation, "Jashore")
+	fmt.Println(statePolulation)
 }
