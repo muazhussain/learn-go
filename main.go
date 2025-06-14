@@ -8,5 +8,11 @@ func main() {
 		"Dhaka":  150000,
 		"Khulna": 2000,
 	}
-	fmt.Println(len(statePolulation))
+	// Passed as reference
+	sp := statePolulation
+	fmt.Println(statePolulation)
+	fmt.Println(sp)
+	delete(sp, "Dhaka")
+	fmt.Println(statePolulation)
+	fmt.Println(sp)
 }
