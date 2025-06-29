@@ -1,10 +1,21 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"io"
+	"log"
+	"net/http"
+)
 
 func main() {
-	// last defer executes first (Last in First out)
-	defer fmt.Println("first")
-	defer fmt.Println("second")
-	defer fmt.Println("third")
+	res, err := http.Get("http://google.com/robots.txt")
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer res.Body.Close()
+	robots, err := io.ReadAll(res.Body)
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Printf("%s\n", robots)
 }
