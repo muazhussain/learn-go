@@ -3,8 +3,8 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("first")
-	// defer execute at the end just before the function return
+	// last defer executes first (Last in First out)
+	defer fmt.Println("first")
 	defer fmt.Println("second")
-	fmt.Println("third")
+	defer fmt.Println("third")
 }
